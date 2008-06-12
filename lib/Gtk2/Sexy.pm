@@ -1,14 +1,15 @@
-package Gtk2::Sexy;
-
 use strict;
 use warnings;
-use base 'DynaLoader';
 
-our $VERSION = 0.02;
+package Gtk2::Sexy;
+
+our $VERSION = '0.03';
+
+use base 'DynaLoader';
 
 sub dl_load_flags { 0x01 }
 
-bootstrap Gtk2::Sexy $VERSION;
+__PACKAGE__->bootstrap($VERSION);
 
 =head1 NAME
 
@@ -37,13 +38,13 @@ right-click menu is provided for misspelled words offering suggestions.
 =item SexyUrlLabel
 
 SexyUrlLabel is a GtkLabel with support for embedded hyperlinks. It uses a
-modified form of the Pango markup format that supports the 
+modified form of the Pango markup format that supports the
 
   <a href="...">...</a>
-  
+
 tag. The hyperlink will appear in blue and can be activated by clicking it.
 Right-clicking the hyperlink displays a menu offering the ability to activate
-it or to copy the URL. 
+it or to copy the URL.
 
 =back
 
@@ -57,21 +58,11 @@ Florian Ragwitz <rafl@debian.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2005-2006 by Florian Ragwitz
+Copyright (C) 2005-2008 by Florian Ragwitz
 
-This library is free software; you can redistribute it and/or modify it under
-the terms of the GNU Lesser General Public License as published by the Free
-Software Foundation; either version 2.1 of the License, or (at your option) any
-later version.
+This is free software, licensed under:
 
-This library is distributed in the hope that it will be useful, but WITHOUT ANY
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more
-details.
-
-You should have received a copy of the GNU Lesser General Public License along
-with this library; if not, write to the Free Software Foundation, Inc., 59
-Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+  The GNU Lesser General Public License Version 2.1, February 1999
 
 =cut
 
