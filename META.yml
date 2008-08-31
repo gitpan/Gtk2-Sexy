@@ -12,11 +12,11 @@ configure_requires:
   Glib::MakeHelper: 0
   Gtk2::CodeGen: 0
 distribution_type: module
-generated_by: 'Module::Install version 0.75'
+generated_by: 'Module::Install version 0.77'
 license: lgpl
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.3.html
-  version: 1.3
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: Gtk2-Sexy
 no_index:
   directory:
@@ -25,12 +25,7 @@ no_index:
     - inc
     - t
     - examples
-    - examples
-provides:
-  Gtk2::Sexy:
-    file: lib/Gtk2/Sexy.pm
-    version: 0.03
 requires:
   Gtk2: 0
   perl: 5.8.0
-version: 0.03
+version: 0.04
